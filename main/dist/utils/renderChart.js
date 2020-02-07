@@ -8,7 +8,7 @@ const renderChart = (props) => {
       document.getElementById('main').style.height = "${height}";
       document.getElementById('main').style.width = "${width}";
       document.getElementById('main').style.backgroundColor = "${backgroundColor}";
-      var myChart = echarts.init(document.getElementById('main'));
+      var myChart = echarts.init(document.getElementById('main'), "macarons");
       myChart.setOption(${toString(props.option)});
       myChart.on('click', function(params) {
         var seen = [];

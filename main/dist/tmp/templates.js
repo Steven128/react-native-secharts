@@ -1,3 +1,4 @@
+import {theme} from "../lib/theme"
 const index = () => {
   return `
   <!DOCTYPE html>
@@ -29,6 +30,7 @@ const index = () => {
     </head>
 
     <body>
+      <script>`+ theme() +`</script>
       <div id="main"></div>
     </body>
 
